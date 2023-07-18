@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {DoDisturb,Poll} from "@mui/icons-material"
 
 import './Topbar.css'
-import { color } from '@mui/system'
 
 export default function Topbar({setHint,data,questionno,setPool,setPausetime}) {
   const [hidehint,setHidehint]= useState(false)

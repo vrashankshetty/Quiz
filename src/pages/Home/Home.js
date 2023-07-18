@@ -50,8 +50,9 @@ handle()
   return (
 
     <div className="app">
-          
-        <div className="main">
+        {localStorage.getItem("userreg")?
+          <>
+          <div className="main">
         {!showtype&&<Topbar setHint={setHint} data={data} questionno={qno} setPool={setPool} setPausetime={setPausetime}/>}
           <div className="heading">
 
@@ -94,7 +95,11 @@ handle()
             
             }
             </div>
-            
+            </>:
+            <div className="message">
+            You Have to Login First
+            </div>
+}
       </div>
   )
 }

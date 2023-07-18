@@ -55,6 +55,7 @@
     border-color: white;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
 }
 .Signin:hover{
     background-color:green;

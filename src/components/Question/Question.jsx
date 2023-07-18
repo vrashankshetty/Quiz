@@ -17,8 +17,7 @@ export default function Question({data,
     setPausetime
     }
     ) {
-        console.log("ans",questionNumber)
-        console.log("dataseg",data[0])
+
     const [prob,setProb]=useState(null)
     const [ans1,setAns1]=useState('answer')
     const [ans2,setAns2]=useState('answer')
@@ -38,16 +37,17 @@ export default function Question({data,
     },[data, questionNumber, setHint])
     if(questionNumber>12){
         setStop(true)
-        localStorage.removeItem("userreg")
+        setTimeout(()=>{
+            localStorage.removeItem("userreg")
+        },5000)   
     }
-    console.log("prob",prob)
     const delay=(duration,callback)=>{
         setTimeout(()=>{
             callback()
         },duration)
     }
     
-    if(aq&&questionNumber==8){
+    if(aq&&questionNumber===8){
        setTimeout(()=>{
          audioplay()
        },6000)
@@ -75,7 +75,9 @@ export default function Question({data,
             wrongans()
             delay(1000,()=>{
                 setStop(true)
-                localStorage.removeItem("userreg")
+                setTimeout(()=>{
+                    localStorage.removeItem("userreg")
+                },5000)   
             })
           
           }

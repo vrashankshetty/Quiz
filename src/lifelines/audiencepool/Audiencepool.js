@@ -5,9 +5,8 @@ export default function Audiencepool({data,questionno,setPool}) {
   const [show,setShow]=useState(true)  
   useEffect(()=>{
      setQuestion(data[questionno-1])
-  },[questionno])
+  },[data, questionno])
   const pool=[]
-  console.log("audienceo",Question)
   for(let i=0;i<4;i++){
     if(!Question.answers[i].correct){
         pool[i]=Math.floor(Math.random()*100)
@@ -16,7 +15,6 @@ export default function Audiencepool({data,questionno,setPool}) {
         pool[i]=99
     }
   }
-  console.log("pool",pool)
   setTimeout(()=>{
     setPool(false)
     setShow(false)

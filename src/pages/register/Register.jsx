@@ -11,7 +11,7 @@ e.preventDefault();
     "email":name,
     "password":password
     }
-    console.log(user)
+   
     localStorage.setItem("userreg",JSON.stringify(user))
     navigate('/quiz')
   }
@@ -26,9 +26,9 @@ e.preventDefault();
           <span className='passwordname'>Password:</span>
           </div>
           <div className='mainbar'>
-          <input type="email" className="email" value={name} onChange={(e)=>setName(e.target.value)}/>
-          <input type="text" className="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
-          <button className='Signin' onClick={handle}>Sign in</button>
+          <input type="email" className="email" value={name}  onChange={(e)=>setName(e.target.value)}/>
+          <input type="text" className="password" value={password}  onChange={(e)=>setPassword(e.target.value)} />
+          <button className='Signin' onClick={handle} disabled={name===''||password===''}>Sign in</button>
           </div>
            
         </div>
