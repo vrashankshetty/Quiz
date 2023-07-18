@@ -1,0 +1,64 @@
+.app{
+    display: flex;
+    background-color:#020230;
+    height: 100vh;
+    position: relative;
+    z-index: 90;
+}
+.main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex:5;
+    background:linear-gradient(to bottom,rgba(0,0,0,0),#020230),url("../../assets/bgphoto.jpeg")center;
+}
+.pyramid{
+    color:white;
+    flex:2.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+ list-style: none;
+ margin:0;
+}
+.moneylist{
+    padding: 10px;
+    margin-bottom: 3px;
+   background-color:#50507c;
+   width: 200px;
+   text-align: center;
+  border-radius: 20px;
+}
+.moneylistactive{
+    padding: 10px;
+   margin-bottom: 3px;
+    background-color:#a8a8c0;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+.earn{
+    top:0;
+    bottom:0;
+    margin: auto;
+    font-size:30px;
+    padding-top: 50px;
+    padding:20px 20px 20px 20px;
+    background:rgba(0, 0, 0,0.6);
+    border-width: 10px;
+    border-color: aliceblue;
+    border-radius: 100px;
+    border-color: aliceblue;
+    border-width: 4px;
+    border-style: solid;
+
+}
+
+.heading,.Congrats{
+    display:flex;
+    justify-content: center;
+    margin-top:6rem;
+    font-size: 50px;
+}

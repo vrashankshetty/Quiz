@@ -1,0 +1,52 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.choice{
+    background-color: rgb(100, 24, 172);
+    margin-right:50px;
+    width: 80px;
+    height:60px;
+    border-color: yellow;
+    border-width: thick;
+    border-radius: 90px;
+    cursor: pointer;
+    position: relative;
+}
+.Audiencepool{
+    background-color: rgb(100, 24, 172);
+    margin-right:10px;
+    width: 80px;
+    height:60px;
+    border-color: yellow;
+    border-width: thick;
+    border-radius: 90px;
+    cursor: pointer;
+    position: relative;
+}
+.icon1,.icon2,.iconname{
+    color: yellow;
+}
+.choiceinfo{
+    position:absolute;
+    margin-right:5rem;
+    margin-top: 5rem;
+    background-color: black;
+    width:120px;
+    display: none;
+}
+.pollinfo{
+    position:absolute;
+    margin-right:15rem;
+    margin-top: 1rem;
+    background-color: black;
+    width:120px;
+    display: none;
+}
+.choice:hover+.choiceinfo{
+    display: inline;
+}
+.Audiencepool:hover+.pollinfo{
+    display:block;
+}

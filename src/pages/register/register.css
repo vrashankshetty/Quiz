@@ -1,0 +1,64 @@
+.containers{
+    width:100%;
+    height: 100vh;
+    background:linear-gradient(to bottom,rgba(0,0,0,0),#020230),url(../../assets/bgphoto.jpeg)center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mains{
+    width:90vh;
+    height: 50vh;
+    background:rgba(0,0,0,0.5);
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+}
+.sidebar{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    justify-self:center;
+}
+.mainbar{
+    flex: 3;
+    display: flex;
+    flex-direction:column;
+    justify-self:center;
+    margin-left:2rem;
+}
+.emailname,.passwordname{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+.email,.password{
+    max-width: 300px;
+    padding-top: 3px;
+    height: 30px;
+    margin-top: 70px;
+   
+}
+.Signin{
+    width:250px;
+    height:40px;
+    font-weight:900;
+    font-size: 20px;
+    margin-top:3rem;
+    background-color: gold;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+}
+.Signin:hover{
+    background-color:green;
+    border-color: rgb(69, 63, 63);
+    border-radius: 10px;
+    color: white;
+}
