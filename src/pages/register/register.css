@@ -69,3 +69,9 @@
     color: azure;
     font-weight: bolder;
 }
+.warning{
+    font-size: medium;
+    margin:20px 3px 3px 3px;
+    position: absolute;
+    color: red;
+}
