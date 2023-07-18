@@ -31,7 +31,7 @@ export const data = [
       answers: [
         {
           text: "2017",
-          correct: true,
+          correct: false,
           hinttext:"2017",
         },
         {
@@ -42,7 +42,7 @@ export const data = [
         },
         {
           text: "2018",
-          correct: false,
+          correct: true,
           hinttext:"2018",
   
         },

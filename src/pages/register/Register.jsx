@@ -34,7 +34,7 @@ e.preventDefault();
           </div>
           <div className='mainbar'>
           <input type="email" className="email" value={name}  onChange={(e)=>setName(e.target.value)}/>
-          <input type="text" className="password" value={password} placeholder='Any Password' onChange={(e)=>setPassword(e.target.value)} />
+          <input type="password" className="password" value={password} placeholder='Any Password' onChange={(e)=>setPassword(e.target.value)} />
 
           {err&&<div className='warning'>Enter the name and password!!</div>}
           <button className='Signin' onClick={handle}>Sign in</button>
